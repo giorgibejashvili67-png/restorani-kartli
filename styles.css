@@ -1,0 +1,433 @@
+/* =========================
+   GLOBAL RESET + PREMIUM FONT LOOK
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 60px;
+
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* LOGO */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d4af37;
+}
+
+.logo a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* =========================
+   DESKTOP NAV
+========================= */
+nav {
+    display: block;
+    position: static;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn,
+button {
+    background: linear-gradient(135deg, #d4af37, #b8912f);
+    color: #111;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    height: 100vh;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.overlay {
+    position: relative;
+    max-width: 700px;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   MENU
+========================= */
+.menu-section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 34px;
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #151515;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content span {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* =========================
+   BOOKING
+========================= */
+.booking {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+#booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+#booking-form input {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: #1a1a1a;
+    color: white;
+    flex: 1 1 200px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about-page {
+    padding: 80px 60px;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 480px;
+    border-radius: 14px;
+}
+
+.about-text h2 {
+    font-size: 34px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-page {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    background: #151515;
+    padding: 25px;
+    border-radius: 14px;
+    min-width: 280px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   LOGIN
+========================= */
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #1a1a1a, #000);
+}
+
+.login-box {
+    background: #151515;
+    padding: 45px;
+    border-radius: 14px;
+    width: 360px;
+    text-align: center;
+}
+
+/* =========================
+   GALLERY
+========================= */
+.movie-page {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0a0a0a;
+    color: #888;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-icons img {
+    width: 36px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    padding: 12px 18px;
+    border-radius: 50px;
+    color: white;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* =========================
+   MOBILE MENU TOGGLE
+========================= */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE / MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: row;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 15px;
+        width: 220px;
+        background: rgba(17,17,17,0.98);
+        border-radius: 12px;
+        padding: 15px;
+        z-index: 999;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .menu-section,
+    .booking,
+    .about-page,
+    .contact-page,
+    .movie-page {
+        padding: 50px 20px;
+    }
+}

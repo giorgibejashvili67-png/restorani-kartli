@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>რესტორანი ქართლი</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        <a href="index.html">RESTORANI QARTLI</a>
+    </div>
+
+    <!-- FIX 1: type button (მნიშვნელოვანია) -->
+    <button class="menu-toggle" type="button">☰</button>
+
+    <!-- FIX 2: nav ID დამატება უკეთეს კონტროლისთვის -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="contact.html">კონტაქტი</a></li>
+            <li><a href="login.html">შესვლა</a></li>
+            <li><a href="movie.html">გალერია</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h1>ქართული პრემიუმ სამზარეულო</h1>
+
+        <p>ტრადიციული გემო თანამედროვე გარემოში</p>
+
+        <a href="#menu" class="btn">მენიუს ნახვა</a>
+    </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu-section">
+
+    <h2>ჩვენი მენიუ</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="img/xinkl.png" alt="ხინკალი">
+            <div class="card-content">
+                <h3>🥟 ხინკალი</h3>
+                <p>ტრადიციული ქართული, წვნიანი და არომატული</p>
+                <span>15₾</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/mwvad.png" alt="მწვადი">
+            <div class="card-content">
+                <h3>🔥 მწვადი</h3>
+                <p>შეშაზე შემწვარი, ნამდვილი ქართული გემო</p>
+                <span>25₾</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/la salade.png" alt="სალათები">
+            <div class="card-content">
+                <h3>🥗 სალათები</h3>
+                <p>ახალი ბოსტნეული და მსუბუქი სოუსები</p>
+                <span>18₾</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/kax.png" alt="სასმელები">
+            <div class="card-content">
+                <h3>🍷 სასმელები</h3>
+                <p>ქართული ღვინო და გამაგრილებელი სასმელები</p>
+                <span>10₾</span>
+            </div>
+        </div>
+
+  
+
+        <div class="card">
+    <img src="img/garden.jpg" alt="ბაღჩა">
+    <div class="card-content">
+        <h3>🥗 Garden</h3>
+        <p>ბაღჩა (კიტრი, პომიდორი, მწვანილით)</p>
+        <span>10₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/herbs.jpg" alt="მწვანილის ასორტი">
+    <div class="card-content">
+        <h3>🌿 Herbs Assortment</h3>
+        <p>მწვანილის ასორტი</p>
+        <span>6₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/beet.jpg" alt="ჭარხლის ფოთოლი">
+    <div class="card-content">
+        <h3>🥬 Beet Greens with Walnut Filling</h3>
+        <p>ჭარხლის ფოთოლი ნიგვზით</p>
+        <span>8₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/spinach.jpg" alt="ისპანახი">
+    <div class="card-content">
+        <h3>🥗 Spinach with Walnut Filling</h3>
+        <p>ისპანახი ნიგვზით</p>
+        <span>8₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/leeks.jpg" alt="პრასი">
+    <div class="card-content">
+        <h3>🌱 Leeks with Walnut Filling</h3>
+        <p>პრასი ნიგვზით</p>
+        <span>8₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/ekala.jpg" alt="ეკალა">
+    <div class="card-content">
+        <h3>🌿 Ekala with Walnut Filling</h3>
+        <p>ეკალა ნიგვზით</p>
+        <span>10₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/eggplant.jpg" alt="ბადრიჯანი">
+    <div class="card-content">
+        <h3>🍆 Eggplant with Walnut Filling</h3>
+        <p>ბადრიჯანი ნიგვზით</p>
+        <span>10₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/pkhali.jpg" alt="ფხალის ასორტი">
+    <div class="card-content">
+        <h3>🥗 Pkhali Assortment</h3>
+        <p>ფხალის ასორტი</p>
+        <span>20₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/kuchmachi.jpg" alt="კუჭმაჭი">
+    <div class="card-content">
+        <h3>🍖 Kuchmachi with Walnuts</h3>
+        <p>კუჭმაჭი ნიგვზით</p>
+        <span>12₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/pickles.jpg" alt="მჟავის ასორტი">
+    <div class="card-content">
+        <h3>🥒 Assortment of Pickles</h3>
+        <p>მჟავის ასორტი</p>
+        <span>8₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/olives.jpg" alt="ზეთისხილი">
+    <div class="card-content">
+        <h3>🫒 Olives</h3>
+        <p>ზეთისხილი</p>
+        <span>5₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/salad.jpg" alt="სალათი">
+    <div class="card-content">
+        <h3>🥗 Cucumber & Tomato Salad</h3>
+        <p>კიტრი პომიდვრის სალათი</p>
+        <span>8₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/walnutsalad.jpg" alt="სალათი ნიგვზით">
+    <div class="card-content">
+        <h3>🥗 Salad with Walnuts</h3>
+        <p>კიტრი პომიდვრის სალათი ნიგვზით</p>
+        <span>10₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/adjika.jpg" alt="აჯიკა">
+    <div class="card-content">
+        <h3>🌶 Salad with Megruli Adjika</h3>
+        <p>კიტრი პომიდვრის სალათი მეგრული აჯიკით</p>
+        <span>10₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/greensalad.jpg" alt="მწვანე სალათი">
+    <div class="card-content">
+        <h3>🥬 Green Salad</h3>
+        <p>მწვანე სალათი</p>
+        <span>12₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/chashushuli.jpg" alt="ჩაშუშული">
+    <div class="card-content">
+        <h3>🍖 Braised Veal</h3>
+        <p>ხბოს ჩაშუშული</p>
+        <span>20₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/chakapuli.jpg" alt="ჩაქაფული">
+    <div class="card-content">
+        <h3>🍲 Stewed Veal</h3>
+        <p>ხბოს ჩაქაფული</p>
+        <span>22₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/ostri.jpg" alt="ოსტრი">
+    <div class="card-content">
+        <h3>🔥 Ostri</h3>
+        <p>ოსტრი</p>
+        <span>18₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/kharcho.jpg" alt="ხარჩო">
+    <div class="card-content">
+        <h3>🍛 Megruli Kharcho</h3>
+        <p>მეგრული ხარჩო ნიგვზით</p>
+        <span>20₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/mtsvadi.jpg" alt="მწვადი">
+    <div class="card-content">
+        <h3>🔥 Pork BBQ</h3>
+        <p>ღორის მწვადი</p>
+        <span>15₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/vealbbq.jpg" alt="ხბოს მწვადი">
+    <div class="card-content">
+        <h3>🍖 Veal BBQ</h3>
+        <p>ხბოს მწვადი</p>
+        <span>25₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/chickenbbq.jpg" alt="ქათმის მწვადი">
+    <div class="card-content">
+        <h3>🍗 Chicken BBQ</h3>
+        <p>ქათმის მწვადი</p>
+        <span>14₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/kebab.jpg" alt="ქაბაბი">
+    <div class="card-content">
+        <h3>🥩 Mixed Kebab</h3>
+        <p>ქაბაბი შერეული</p>
+        <span>14₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/khinkali.jpg" alt="ხინკალი">
+    <div class="card-content">
+        <h3>🥟 Khinkali Qalaquri</h3>
+        <p>ხინკალი ქალაქური</p>
+        <span>2₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/mtiuluri.jpg" alt="მთიულური">
+    <div class="card-content">
+        <h3>🥟 Khinkali Mtiuluri</h3>
+        <p>ხინკალი მთიულური</p>
+        <span>2₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/potato.jpg" alt="კარტოფილით">
+    <div class="card-content">
+        <h3>🥔 Khinkali with Potatoes</h3>
+        <p>ხინკალი კარტოფილით</p>
+        <span>1.5₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/mushroom.jpg" alt="სოკოთი">
+    <div class="card-content">
+        <h3>🍄 Khinkali with Mushroom</h3>
+        <p>ხინკალი სოკოთი</p>
+        <span>2₾</span>
+    </div>
+</div>
+
+<div class="card">
+    <img src="img/cheese.jpg" alt="ყველით">
+    <div class="card-content">
+        <h3>🧀 Khinkali with Cheese</h3>
+        <p>ხინკალი ყველით</p>
+        <span>2₾</span>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+   
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 რესტორანი ქართლი</p>
+
+    <div class="social-icons">
+
+        <a href="https://www.facebook.com/RestaurantKartli/" target="_blank">
+            <img src="img/fcb.png" alt="Facebook">
+        </a>
+
+        <a href="https://www.instagram.com/restaurant_kartli/" target="_blank">
+            <img src="img/inst.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.tiktok.com/@restaurantkartli/photo/7546468082533797128" target="_blank">
+            <img src="img/tkt.png" alt="TikTok">
+        </a>
+
+        <a href="https://youtube.com/" target="_blank">
+            <img src="img/ytb.png" alt="YouTube">
+        </a>
+
+    </div>
+</footer>
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
